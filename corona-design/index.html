@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoronaBD</title>
+    <link rel="stylesheet" href="../bulma/css/bulma.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar is-white">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item brand-text">CoronaBD</a>
+          <div
+            id="navbar-burger"
+            class="navbar-burger burger"
+            data-target="navMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="" class="navbar-item is-active">Home</a>
+            <a href="" class="navbar-item">Home</a>
+            <a href="" class="navbar-item">Home</a>
+            <a href="" class="navbar-item">Home</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info welcome">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Hello World</h1>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(() => {
+      $("#navbar-burger").click(() => {
+        let navbarBurger = $("#navbar-burger");
+        let navMenu = $("#navMenu");
+        navbarBurger.hasClass("is-active")
+          ? navbarBurger.removeClass("is-active")
+          : navbarBurger.addClass("is-active");
+        navMenu.hasClass("is-active")
+          ? navMenu.removeClass("is-active")
+          : navMenu.addClass("is-active");
+      });
+    });
+  </script>
+</html>
