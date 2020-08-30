@@ -51,6 +51,9 @@ nav.navbar {
 .card-content.p10 {
   padding: 10px;
 }
+.card-content.p15 {
+  padding: 15px 10px 20px 10px;
+}
 .is-horizontal-center {
   justify-content: center;
   margin: auto;
@@ -149,4 +152,7 @@ nav.navbar {
 
 .progress.is-large {
   height: 1.5rem !important;
+}
+.counter-span-number {
+  font-weight: bolder;
 }
