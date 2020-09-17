@@ -48,8 +48,20 @@ $(document).ready(() => {
       toastr.danger("something went wrong!");
     });
 });
-function covertEToB(number) {
-  return new Number(number).toLocaleString("bn-BD");
+function covertEToB(num) {
+  num = num.toString();
+  num = num.replace(/0/gi, "০");
+  num = num.replace(/1/gi, "১");
+  num = num.replace(/2/gi, "২");
+  num = num.replace(/3/gi, "৩");
+  num = num.replace(/4/gi, "৪");
+  num = num.replace(/5/gi, "৫");
+  num = num.replace(/6/gi, "৬");
+  num = num.replace(/7/gi, "৭");
+  num = num.replace(/8/gi, "৮");
+  num = num.replace(/9/gi, "৯");
+  // return new Number(num).toLocaleString("bn-BD");
+  return num;
 }
 function percent(total, num) {
   return (num / total) * 100;
